@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wasabiwallet.io/sitemap.xml
+Sitemap: https://gingerwallet.io/sitemap.xml
 
 Disallow: /restore/
 Disallow: /bak/
