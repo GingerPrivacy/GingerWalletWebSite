@@ -1,1 +1,1 @@
-# WasabiWalletWebSite
+# GingerWalletWebSite
