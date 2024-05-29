@@ -146,6 +146,9 @@ section {
     padding: 20px;
     height: 100%;
 }
+.box a {
+    color: var(--primary);
+}
 .box-icon {
     height: 80px;
     width: 80px;
@@ -235,7 +238,7 @@ section {
     fill: #9da8ab;
 }
 .social-icons a:hover > svg {
-    fill: var(--green);
+    fill: var(--primary);
 }
 .download-icon {
     height: 40px;
