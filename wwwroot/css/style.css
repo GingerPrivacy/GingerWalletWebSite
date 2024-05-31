@@ -4,7 +4,7 @@
     /* #A28E6C */
     
     --secondary: rgba(203, 184, 153, 1);
-    --black: #0C081C;
+    --black: #1A1A1A;
 }
 * {
     margin: 0;
@@ -146,7 +146,7 @@ section {
 }
 .box {
     border-radius: 12px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.03);
     padding: 20px;
     height: 100%;
 }
@@ -362,6 +362,9 @@ ol li {
 }
 .lh {
     line-height: 1.8em;
+}
+.rounded-corners {
+    border-radius: 12px;
 }
 @media only screen and (max-width: 600px) {
     .menu {
