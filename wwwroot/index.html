@@ -1,162 +1,404 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Ginger Wallet: Bitcoin privacy wallet with built-in coinjoin">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="title" content="Ginger Wallet: Bitcoin privacy wallet with coinjoin">
     <meta name="description" content="Ginger is an open-source, non-custodial, privacy-focused Bitcoin wallet for desktop, that implements trustless coinjoin over the Tor anonymity network.">
-    <meta name="keywords" content="ginger wallet,gingerwallet,ginger bitcoin wallet,wassabi wallet,bitcoin ginger wallet,gingerwallet,download ginger wallet,ginger btc,ginger wallet,wallet ginger,ginger wallet fees,what is ginger wallet,coinjoin, coin join">
-
-    <!-- Open Graph / Facebook -->
+    <meta name="keywords" content="Ginger wallet,Gingerwallet,Ginger bitcoin wallet,wassabi wallet,bitcoin Ginger wallet,Gingerwallet,download Ginger wallet,Ginger btc,Ginger wallet,wallet Ginger,Ginger wallet fees,what is Ginger wallet,coinjoin, coin join">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gingerwallet.io">
-    <meta property="og:title" content="Ginger Wallet - Bitcoin privacy wallet with built-in coinjoin">
+    <meta property="og:url" content="https://Gingerwallet.io">
+    <meta property="og:title" content="Ginger Wallet - Bitcoin privacy wallet with coinjoin">
     <meta property="og:description" content="Ginger is an open-source, non-custodial, privacy-focused Bitcoin wallet for desktop, it implements trustless coinjoin over the Tor anonymity network.">
     <meta property="og:image" content="https://gingerwallet.io/img/ginger-social.jpg">
-    <meta property="og:site_name" content="Ginger Wallet - Bitcoin privacy wallet with built-in coinjoin">
-
-    <!-- Twitter -->
+    <meta property="og:site_name" content="Ginger Wallet - Bitcoin privacy wallet with coinjoin">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://gingerwallet.io">
-    <meta property="twitter:title" content="Ginger Wallet - Bitcoin privacy wallet with built-in coinjoin">
+    <meta property="twitter:title" content="Ginger Wallet - Bitcoin privacy wallet with coinjoin">
     <meta property="twitter:description" content="Ginger is an open-source, non-custodial, privacy-focused Bitcoin wallet for desktop, it implements trustless coinjoin over the Tor anonymity network.">
-    <meta property="twitter:image" content="https://gingerwallet.io/img/ginger-social.jpg">
-
+    <meta property="twitter:image" content="https://Gingerwallet.io/img/Ginger-social.jpg">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Ginger Wallet - Bitcoin privacy wallet with built-in coinjoin</title>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "url": "https://gingerwallet.io",
-            "logo": "https://gingerwallet.io/img/ginger_logo.jpg"
-        }
-    </script>
+    <title>Ginger Wallet - Bitcoin privacy wallet with coinjoin</title>
+    <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "Organization", "url": "https://Gingerwallet.io", "logo": "https://Gingerwallet.io/img/Ginger_logo.png" }</script>
 </head>
 
-<body class="pt-100vh">
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<body>
+    <header>
         <div class="container">
-            <a class="logo" href="index.html">
-                <img src="img/logo.svg" alt="Ginger Wallet">
-            </a>
-            <input type="checkbox" id="navswitch">
-            <label for="navswitch" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </label>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">The Wallet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">Help</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary" href="index.html#download">Download</a>
-                    </li>
-                </ul>
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="index.html"><img src="img/logo.svg" class="logo">
+                    </a>
+                </div>
+                <div class="col">
+                    <input type="checkbox" id="navswitch">
+                    <label for="navswitch" class="navbarToggler d-inline-block d-lg-none"><span class="navbar-toggler-icon"></span>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="#aboutus">History</a>
+                        </li>
+                        <li><a href="#why">Why Ginger Wallet?</a>
+                        </li>
+                        <li><a href="#securecoinjoins">Secure Coinjoins</a>
+                        </li>
+                        <li><a href="#help">Help</a>
+                        </li>
+                        <li class="d-block d-lg-none"><a href="#download">Download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <a href="index.html#download" class="btn btn-primary prefix-arrowdown">Download</a>
+                </div>
             </div>
         </div>
-    </nav>
-
+    </header>
     <div class="content">
-        <section class="video-homepage">
-            <div class="download-btn-area">
-                <div class="home-text-area">
-                    <h1>Ginger Wallet <span class="green-text d-block">Ginger is healthy for your privacy!</span></h1>
-                    <p>
-                        Open-source, non-custodial
-                        <strong>Bitcoin Wallet</strong> for desktop with built-in coinjoin
-                    </p>
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 offset-lg-2 text-center py-5">
+                        <h1 class="section-label">GINGER WALLET</h1>
+                        <h2 class="epic-text">Your most secure Bitcoin wallet!</h2>
+                        <p class="bigger-text">Discover the ultimate open-source, non-custodial Bitcoin wallet for desktop! Enjoy seamless Coinjoin integration, advanced coin verification to ensure clean transactions, and guaranteed liquidity for top-tier privacy and efficiency.</p>
+                        <a href="index.html#download" class="btn btn-primary my-5">Download</a> <a href="#why" class="btn btn-link">Read more</a>
+                    </div>
+                    <div class="col-lg-12">
+                        <img src="img/webpage_ui_Preview_Transaction.png" class="w-100 rounded-corners">
+                    </div>
                 </div>
-                <a href="#download" class="btn btn-primary btn-download d-block d-md-inline">
-                    DOWNLOAD <img src="img/download-arrow.svg" alt="Download Ginger Wallet">
-                </a>
             </div>
         </section>
-        <section class="blured-section p-200">
+        <section id="aboutus">
             <div class="container">
-                <div class="row align-items-center position-relative">
-                    <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="text-center">
-                            <div class="epic-text title-lined mb-5"><strong>Privacy is</strong> your <strong>ability</strong> to <strong>selectively reveal</strong> yourself to the world</div>
+                            <div class="section-label">About us</div>
                         </div>
+                        <h2 class="title text-center mb-4">The history of Ginger Wallet</h2>
                         <div class="row">
-                            <div class="col-lg-8 offset-lg-2">
-                                <p class="mb-5">
-                                    We live in an Orwellian surveillance society where your information is being used to typecast and manipulate you. Bitcoin projects are being pressured to collect more and more data, if possible.
-                                    <br />This is why Ginger Wallet is programmed to be a zero-knowledge software. Developers can't collect any sensitive information about you. What you do with your bitcoin is your business.
+                            <div class="col-lg-6 offset-lg-3">
+                                <p>
+                                    We believe the most urgent issue facing humanity is fixing the monetary system, with Bitcoin being the best solution and privacy as its biggest challenge.
                                 </p>
+                                <p>
+                                    Ginger Wallet was created to help Bitcoin retain its cypherpunk principles on its journey to becoming a global reserve currency and to address the inherent privacy issues of its public ledger. This is why Ginger Wallet is an open-source, non-custodial, privacy-focused Bitcoin wallet for desktop that implements trustless coinjoin technology.
+                                </p>
+                                <p>
+                                    After years of privacy research and development, we’ve realized that having good tools is not enough—they must also be easy to use. Otherwise, they will only be utilized by a minority, making those users stand out. To encourage the adoption of these tools, Ginger is designed to be user-friendly and to provide privacy automatically by default.
+                                </p>
+                            </div>
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-title">2024 - <img src="img/ww_logo.svg" class="timeline-small-img" alt="Ginger Wallet"> Wasabi Wallet without coinjoin</div>
+                                    <p>The default coinjoin coordinator of Wasabi Wallet stopped operating.</p>
+                                </li>
+                                <li>
+                                    <div class="timeline-title">2024 - <img src="img/ginger_logo_small.svg" class="timeline-small-img" alt="Ginger Wallet"> Ginger Wallet</div>
+                                    <p>Ginger Wallet forked from Wasabi Wallet. A new coordinator with an active coinjoin service has been established.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="why">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="sticky-top pt-header">
+                                    <div class="section-label">Solutions</div>
+                                    <h2 class="mb-4">WHY GINGER WALLET?</h2>
+                                    <p class="mb-4">We live in a society reminiscent of Orwell's dystopian vision, where surveillance is pervasive, and your information is exploited to categorize and influence you. Bitcoin projects face increasing pressure to gather extensive data whenever possible.</p>
+                                    <p>This is why Ginger Wallet is designed as a zero-knowledge software. Its developers cannot collect any of your sensitive information. Your bitcoin transactions remain entirely your own business.</p>
+                                    <a href="#download" class="btn btn-primary">Download</a> <a href="#securecoinjoins" class="btn btn-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row pt-header">
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="box">
+                                            <img src="img/lock_open_right_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                            <h3 class="title">Open Source</h3>
+                                            <p>Ginger Wallet is a <a href="https://github.com/GingerPrivacy/GingerWallet" target="_blank">free, open-source</a> and <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md" target="_blank">deterministically reproducible</a> software. Anyone can see, verify and even contribute to the code.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="box">
+                                            <img src="img/key_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                            <h3 class="title">Non-custodial</h3>
+                                            <p>Not your keys, not your coins. With Ginger Wallet, you have control over your private keys, granting you true financial self-sovereignty.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="box">
+                                            <img src="img/visibility_lock_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                            <h3 class="title">Trustless By Design</h3>
+                                            <p>
+                                                The software is engineered to ensure that neither the public nor the developers can compromise your privacy. This is achieved through <a href="https://github.com/zkSNACKs/WabiSabi/" target="_blank">coinjoins</a>, <a href="https://nopara73.medium.com/bitcoin-core-vs-Ginger-wallet-network-level-privacy-bdca1d501387" target="_blank">client-side block filtering</a>, and communication via the <a href="https://www.torproject.org/" target="_blank">Tor anonymity network.</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="box">
+                                            <img src="img/checklist_rtl_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                            <h3 class="title">Easy To Use</h3>
+                                            <p>Ginger is designed as a <a href="https://www.researchgate.net/publication/228348285_Anonymity_loves_company_Usability_and_the_network_effect" target="_blank">user friendly</a> Bitcoin wallet that automatically manages your privacy behind the scenes, including network connections, <a href="https://en.bitcoin.it/wiki/Transaction#Input" target="_blank">input</a> selection, and coinjoining.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="box">
+                                            <img src="img/soap_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                            <h3 class="title">Comprehensive</h3>
+                                            <p>The wallet employs <a href="https://github.com/zkSNACKs/WabiSabi/" target="_blank">WabiSabi</a>, an anonymous credential scheme designed to facilitate more accessible and efficient coinjoins. This enables users to leverage the best privacy tools without needing a significant amount of bitcoin in their wallet.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="box">
+                                            <img src="img/savings_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                            <h3 class="title">Affordable</h3>
+                                            <p>Coinjoining coins with a value exceeding 0.01 BTC incurs a 0.3% <a href="https://github.com/GingerPrivacy/GingerWallet/tree/master/WalletWasabi.Backend" target="_blank">coordinator</a> fee + <a href="https://mempool.space/" target="_blank">mining fees</a>. Inputs of 0.01 BTC or less, as well as remixes, are exempt from coordinator fees, even after a single transaction. Consequently, a payment made with coinjoined funds allows both the sender and the recipient to remix their coins without incurring any coordinator fees.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="securecoinjoins">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="">
+                                    <div class="section-label">Secure Coinjoins</div>
+                                    <h2 class="mb-4">Your security is our top priority!</h2>
+                                    <p class="mb-4">While it's a free market where anyone can operate as a coordinator, few take responsibility. We are among the few who do. With our safe background, we ensure your coins remain separate from those from illicit sources, and we have sufficient liquidity to achieve excellent privacy scores.</p>
+                                    <a href="#download" class="btn btn-primary">Download</a> <a href="#aboutus" class="btn btn-link">Read more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <img src="img/webpage_ui_Preview_Transaction.png" class="w-100 rounded-corners">
+                            </div>
+                        </div>
+
+                        <div class="row pt-header">
+                            <div class="col-lg-4 mb-4">
+                                <div class="box">
+                                    <img src="img/support_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                    <h3 class="title">Secure Coinjoins</h3>
+                                    <p>Experience secure and reliable CoinJoin transactions with our advanced protocols. We prioritize your privacy and strive to ensure that your coins remain untainted by illicit sources. Our commitment to security and liquidity guarantees a high level of anonymity and trust.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="box">
+                                    <img src="img/rule_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                    <h3 class="title">Coin verifier</h3>
+                                    <p>With our coin verifier solution, we ensure that your coins are not mixed with those from illicit sources. Our advanced technology provides an extra layer of protection for your assets.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="box">
+                                    <img src="img/water_drop_24dp_FILL0_wght400_GRAD0_opsz24.svg" class="box-icon">
+                                    <h3 class="title">Guaranteed Liquidity</h3>
+                                    <p>We guarantee a minimum of 50-100 inputs at the start of each CoinJoin round to enhance your privacy. This ensures robust participation and maximizes the effectiveness of your transactions.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="home p-100">
+        <section id="help">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-8 offset-xl-2 text-center">
-                        <h2 class="title-small title-lined my-5">Why Ginger Wallet?</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="section-label">Help</div>
+                        <h2 class="mb-5">Frequently Asked Questions</h2>
+                        <div class="card">
+                            <input type="checkbox" id="faq1">
+                            <label for="faq1">
+                                WHAT IS A “COINJOIN”?
+                            </label>
+                            <div class="card-content">
+                                <p>A coinjoin is a collaborative transaction between multiple peers.</p>
+
+                                <p>Usually, but not necessarily, it consists of some standard output denominations that participants should break their coins in to. This makes it difficult for outside parties to trace where a particular coin was sent to (as opposed to regular bitcoin transactions, where there is usually one sender and one receiver).</p>
+
+                                <p>Coinjoins can be done with non-custodial software like Ginger Wallet, that eliminates the risk of funds disappearing or being stolen. The funds will always be in a bitcoin address that the user controls and not even developers can alter the transaction or redirect the funds.</p>
+
+                                <p>Coinjoin basically means: “when you want to make a transaction, find someone else who also wants to make a transaction and make a joint transaction together”.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq2">
+                            <label for="faq2">
+                                WHAT ARE THE FEES FOR COINJOINS?
+                            </label>
+                            <div class="card-content">
+                                <p>Coinjoining coins with a value above 0.01 BTC costs 0.3% as a coordinator fee + mining fees. Inputs of 0.01 BTC or below don't pay coordinator fees, nor do remixes, even after one transaction. Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordinator fees.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq3">
+                            <label for="faq3">
+                                DO I NEED TO TRUST GINGER WITH MY COINS?
+                            </label>
+                            <div class="card-content">
+                                <p>No, Ginger’s coinjoin implementation is trustless by design. The participants do not need to trust each other or the coordinator. Since only the user knows the private keys, only he can sign the transaction, which will only be done after verifying that everything is alright. Nobody can neither steal your coins, nor figure out which outputs belong to which inputs.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq4">
+                            <label for="faq4">
+                                DOES GINGER SUPPORT HARDWARE WALLETS?
+                            </label>
+                            <div class="card-content">
+                                <p>Ginger does support hardware wallet usage through the standard Bitcoin-core HWI, although coinjoining straight from or to a hardware wallet is not yet possible.</p>
+
+                                <p>Here's a <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-hardware-wallets" target="_blank">list</a> of the officially supported hardware wallets.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq5">
+                            <label for="faq5">
+                                IS THERE AN ANDROID/IOS VERSION?
+                            </label>
+                            <div class="card-content">
+                                <p>No. Ginger’s features, like coinjoin, require considerable computational power, which are currently not replicable on a smartphone.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq6">
+                            <label for="faq6">
+                                DOES GINGER SUPPORT ALTCOINS?
+                            </label>
+                            <div class="card-content">
+                                <p>There are countless reasons why it is the only logical choice to be bitcoin-only. With Bitcoin we have a once in a lifetime opportunity to manifest libre sound money. If we succeed, then an utmost beautiful agora of sovereign individuals may emerge. If we fail, then this will conjure up the most horrific Orwellian nightmare. There is no room for wasted time and energy, this great work requires our full attention. Any line of code written to support a random shitcoin takes away scarce developer time to work on real problems.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq7">
+                            <label for="faq7">
+                                WHAT ARE THE MINIMAL REQUIREMENTS TO RUN GINGER?
+                            </label>
+                            <div class="card-content">
+                                <p>Ginger runs in most operating systems with 64-bit architecture.</p>
+
+                                <p>For the complete list of all the officially supported operating systems, click <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi.Documentation/WasabiCompatibility.md#officially-supported-operating-systems" target="_blank">here</a>.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq8">
+                            <label for="faq8">
+                                DO I NEED TO RUN TOR?
+                            </label>
+                            <div class="card-content">
+                                <p>All Ginger network traffic goes via Tor by default -there's no need to set up Tor by yourself. If you do already have Tor, and it is running, then Ginger will try to use that first. </p>
+                                <p> You can turn off Tor in the Settings. Note that in this case you are still private, except when you coinjoin and when you broadcast a transaction. In the first case, the coordinator would know the links between your inputs and outputs based on your IP address. In the second case, if you happen to broadcast a transaction of yours to a full node that is spying on you, it will know the link between your transaction and your IP address.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq9">
+                            <label for="faq9">
+                                WHY IS IT IMPORTANT TO USE A NEW ADDRESS FOR EVERY PAYMENT?
+                            </label>
+                            <div class="card-content">
+                                <p>Addresses being used more than once is very damaging to privacy because that links together more blockchain transactions with proof that they were created by the same entity. The most private and secure way to use bitcoin is to send a brand new address to each person who pays you. After an address has received a coin, it should never be used again. Also, a brand new bitcoin address should be demanded from the recipient when sending bitcoin. Ginger has a user interface which discourages address reuse by removing from the GUI addresses which have received a coin.</p>
+
+                                <p>It has been argued that the phrase "bitcoin address" was a bad name for this object because it implies it can be reused like an email address. A better name would be something like "bitcoin invoice".</p>
+
+                                <p>Bitcoin isn't anonymous but pseudonymous, and the pseudonyms are bitcoin addresses. Avoiding address reuse is like throwing away a pseudonym after it has been used.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq10">
+                            <label for="faq10">
+                                WHAT IS THE PASSWORD USED FOR?
+                            </label>
+                            <div class="card-content">
+                                <p>The password you set is used as a 13th seed word (as described in <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" target="_blank">BIP 39</a>) and to encrypt the private key of the extended private key (as described in <a href="https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki" target="_blank">BIP 38</a>) to get an encrypted secret which is stored on the computer.</p>
+
+                                <p>Ginger Wallet stores only the BIP38 encrypted blob, so you'll need to type in the password to spend or coinjoin from the wallet.</p>
+
+                                <p>The password will unlock your bitcoin to anyone who has access to the recovery words backup or the computer! If your backup gets compromised, this password is the only thing protecting your precious sats.</p>
+
+                                <p>It is important to use a random and long password.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-5">
-                        <ul class="feature-list">
-                            <li>
-                                <h2 class="title">Open Source</h2>
-                                <p>Ginger Wallet is a <a href="https://github.com/GingerPrivacy/GingerWallet" target="_blank">free, open-source</a> and <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md" target="_blank">deterministically reproducible</a> software. Anyone can see, verify and even contribute to the code.</p>
-                            </li>
-                            <li>
-                                <h2 class="title">Trustless By Design</h2>
-                                <p>
-                                    The software is designed so that neither the public nor the developers can breach your privacy. This is done through <a href="https://github.com/zkSNACKs/WabiSabi/" target="_blank">coinjoins</a>, <a href="https://nopara73.medium.com/bitcoin-core-vs-Ginger-wallet-network-level-privacy-bdca1d501387" target="_blank">client-side block filtering</a> and communication over the <a href="https://www.torproject.org/" target="_blank">Tor anonymity network.</a>
-                                </p>
-                            </li>
-                            <li>
-                                <h2 class="title">Non-custodial</h2>
-                                <p>Not your keys, not your coins. Ginger Wallet lets you control your private keys, offering you true financial self sovereignty.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 offset-md-1 position-relative">
-                        <img src="img/screenshots/webpage_ui_Preview_Transaction.png" class="pull-img pull-img-to-right" alt="Ginger Wallet Transaction Preview" />
-                    </div>
-                </div>
-                <div class="row align-items-center p-100 m-100">
-                    <div class="col-md-5 position-relative order-2 order-md-1">
-                        <img src="img/screenshots/webpage_ui_Privacy_Progress.png" class="pull-img pull-img-to-left" alt="Ginger Wallet Privacy Progress" />
-                    </div>
-                    <div class="col-md-6 offset-md-1 order-1 order-md-2">
-                        <ul class="feature-list">
-                            <li>
-                                <h2 class="title">Easy To Use</h2>
-                                <p>Ginger is designed to be a <a href="https://www.researchgate.net/publication/228348285_Anonymity_loves_company_Usability_and_the_network_effect" target="_blank">user friendly</a> Bitcoin wallet, that handles its users' privacy automatically under the hood, including network connections, <a href="https://en.bitcoin.it/wiki/Transaction#Input" target="_blank">input</a> selection and coinjoining.</p>
-                            </li>
-                            <li>
-                                <h2 class="title">Comprehensive</h2>
-                                <p>The wallet uses <a href="https://github.com/zkSNACKs/WabiSabi/" target="_blank">WabiSabi</a>, an anonymous credential scheme that was designed to enable more accessible and efficient coinjoins. It allows users to utilize the best privacy tool without requiring a large amount of bitcoin in the wallet.</p>
-                            </li>
-                            <li>
-                                <h2 class="title">Affordable</h2>
-                                <p>Coinjoining coins with a value above 0.01 BTC costs 0.3% as a <a href="https://github.com/GingerPrivacy/GingerWallet/tree/master/WalletWasabi.Backend" target="_blank">coordinator</a> fee + <a href="https://mempool.space/" target="_blank">mining fees</a>. Inputs of 0.01 BTC or below don't pay coordinator fees, nor do remixes, even after one transaction. Thus, a payment made with coinjoined funds allows the sender and the recipient to remix their coins without paying any coordinator fees.</p>
-                            </li>
-                        </ul>
+                    <div class="col-lg-4">
+                        <div class="sticky-top pt-header">
+                            <div class="box">
+                                <h4 class="mb-4">How to add Ginger coordinator to Wasabi Wallet in a few easy steps?</h4>
+                                <ol class="text-start">
+                                    <li>Make sure that you are using the latest Wasabi Wallet version.</li>
+                                    <li>Go to Settings -> Bitcoin tab -> Coordinator URI</li>
+                                    <li>Change https://api.wasabiwallet.io/ -> https://api.gingerwallet.io/</li>
+                                    <li>Restart Wasabi Wallet</li>
+                                </ol>
+                                <strong class="text-primary mt-5 d-block">We strongly recommend using the Ginger Wallet client for long-term reliability!</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="home p-100 green-bordered-section" id="download">
+        <section>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="text-center mb-5">
+                            <h2 class="title mt-5">Reclaim your <span class="green-text d-block">privacy now</span></h2>
+                            <h3>Get started in 3 simple steps</h3>
+                        </div>
+                        <div class="row text-center p-100">
+                            <div class="col-md-4 my-4">
+                                <div class="icon-big mx-auto">
+                                    <img src="img/downloadww.svg" alt="Ginger Wallet Download">
+                                </div>
+                                <p class="mt-4 mb-0 text-center text-md-left">
+                                    <strong>1. Download Ginger Wallet</strong>
+                                </p>
+                            </div>
+                            <div class="col-md-4 my-4">
+                                <div class="icon-big mx-auto">
+                                    <img src="img/createnewwallet.svg" alt="Ginger Wallet Create Wallet">
+                                </div>
+                                <p class="mt-4 mb-0 text-center text-md-left">
+                                    <strong>2. Create a new wallet</strong>
+                                </p>
+                            </div>
+                            <div class="col-md-4 my-4">
+                                <div class="icon-big mx-auto">
+                                    <img src="img/coinjoin.svg" alt="Ginger Wallet Coinjoin">
+                                </div>
+                                <p class="mt-4 mb-0 text-center text-md-left">
+                                    <strong>3. Let auto-coinjoin do its magic</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <a href="index.html#download" class="btn btn-primary btn-download mt-5">Download NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="download">
             <div class="container">
                 <div class="row align-items-center mt-5 mt-md-0">
                     <div class="col-xl-6 offset-xl-3">
@@ -165,11 +407,11 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="version-content">
+                        <div class="version-content d-none d-lg-block">
                             <div class="text-center lh mb-5">
                                 <a href="https://github.com/GingerPrivacy/GingerWallet#build-from-source-code" target="_blank"><i class="muted-text">or build it from source</i></a>
-                                <br /> <a href="https://raw.githubusercontent.com/GingerPrivacy/GingerWallet/master/PGP.txt" target="_blank">PGP: FA0B 017A 3E75 CE65 CBF7  838F A8FF 3767 EDF5 DCE9</a>
-                                <br /> <a href="https://github.com/GingerPrivacy/GingerWallet/releases" target="_blank" class="green-text">RELEASE NOTES</a>
+                                <br> <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/PGP.txt" target="_blank">PGP: FA0B 017A 3E75 CE65 CBF7 838F A8FF 3767 EDF5 DCE9</a>
+                                <br> <a href="https://github.com/GingerPrivacy/GingerWallet/releases" target="_blank" class="green-text">RELEASE NOTES</a>
                             </div>
                             <div class="row align-items-end">
                                 <div class="col-sm-6 col-lg-4 col-xl">
@@ -178,9 +420,9 @@
                                         <div class="my-4">
                                             <div class="system-text">WINDOWS 10+</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.msi" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.msi" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .msi <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.msi.asc" target="_blank">signature</a> / <a href="https://docs.Gingerwallet.io/using-Ginger/InstallPackage.html#windows" target="_blank">guide</a></span>
+                                            .msi <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.msi.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -190,9 +432,9 @@
                                         <div class="my-4">
                                             <div class="system-text">MACOS 12.0+ INTEL</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.dmg.asc" target="_blank">signature</a> / <a href="https://docs.Gingerwallet.io/using-Ginger/InstallPackage.html#macos" target="_blank">guide</a></span>
+                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.dmg.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -202,9 +444,9 @@
                                         <div class="my-4">
                                             <div class="system-text">MACOS 12.0+ M1, M2</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2-arm64.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0-arm64.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2-arm64.dmg.asc" target="_blank">signature</a> / <a href="https://docs.Gingerwallet.io/using-Ginger/InstallPackage.html#macos" target="_blank">guide</a></span>
+                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0-arm64.dmg.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -214,9 +456,9 @@
                                         <div class="my-4">
                                             <div class="system-text">UBUNTU / DEBIAN</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.deb" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.deb" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .deb <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.deb.asc" target="_blank">signature</a> / <a href="https://docs.Gingerwallet.io/using-Ginger/InstallPackage.html#debian-and-ubuntu" target="_blank">guide</a></span>
+                                            .deb <span class="float-end"><a href="hhttps://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.deb.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -226,49 +468,63 @@
                                         <div class="my-4">
                                             <div class="system-text">OTHER LINUX</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.tar.gz" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.tar.gz" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .tar.gz <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.7.2/Ginger-2.0.7.2.tar.gz.asc" target="_blank">signature</a> / <a href="https://docs.Gingerwallet.io/using-Ginger/InstallPackage.html#other-linux" target="_blank">guide</a></span>
+                                            .tar.gz <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v1.0/Ginger-1.0.tar.gz.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="d-block d-lg-none">
+                            <p class="text-primary text-center  ">Our software is exclusively available for desktop use. To download, please access this website from a desktop computer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-auto py-2">
-                    <ul class="social-icons white-fill justify-content-lg-center">
-                        <li>
-                            <a href="https://x.com/GingerWallet" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-                                    <path d="M20.1,0H9.9C4.4,0,0,4.4,0,9.9v10.3C0,25.6,4.4,30,9.9,30h10.3c5.4,0,9.9-4.4,9.9-9.9V9.9C30,4.4,25.6,0,20.1,0z
-         M18.1,22.4l-4-5.2l-4.5,5.2H7.1l5.9-6.7L6.8,7.6H12l3.6,4.7l4.1-4.7h2.5l-5.5,6.3l6.5,8.5H18.1z" />
-                                    <polygon points="9.7,9 18.8,20.9 20.2,20.9 11.2,9" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://t.me/GingerWallet" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 139">
-                                    <path class="cls-1" d="M99.41,0H39.59C17.73,0,0,17.73,0,39.59v59.81c0,21.87,17.73,39.59,39.59,39.59h59.81c21.87,0,39.59-17.73,39.59-39.59V39.59C139,17.73,121.27,0,99.41,0Zm13.42,39.96l-13.75,64.19s-.83,3.79-4,3.92c-.79,.03-1.57-.2-2.25-.62-4.83-2.95-22.58-16.21-22.58-16.21l-10.62,10.13s-1.93,1.93-3.98,2.05l1.69-21.96,39.57-35.47s.72-.97,0-1.21c-.72-.24-1.13-.56-3.34,.81-2.21,1.37-48.29,30.32-48.29,30.32l-21.49-6.51s-3.36-1.28-2.87-3.38c.36-1.56,2.41-2.65,3.86-3.13,1.45-.48,82.75-31.61,82.75-31.61,0,0,3.62-1.45,5.31,1.45,1.45,2.17,0,7.22,0,7.22Z" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg py-2 text-lg-end">
-                    <a href="/swagger" class="d-inline-block me-3">API</a>
-                    <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/" target="_blank" class="d-inline-block">Privacy policy</a>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a href="#"><strong class="d-inline-flex">InvisibleBit LLC.</strong></a>
+                    </div>
+                    <div class="col">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://github.com/GingerPrivacy" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path d="M192.16,247.94v10.28a9.854,9.854,0,0,1-9.86,9.86h-.86a.693.693,0,0,1-.66-.65,2.8,2.8,0,0,1,0-.29c0-1.27.01-2.54.01-3.81a4.974,4.974,0,0,0-.19-1.48,2.86,2.86,0,0,0-.74-1.28.19.19,0,0,1-.04-.06c.11-.01.2-.03.3-.04a11.883,11.883,0,0,0,2.22-.49,6.43,6.43,0,0,0,2.14-1.19,5.479,5.479,0,0,0,1.64-2.51,7.94,7.94,0,0,0,.41-2.15,10.384,10.384,0,0,0,.03-1.25,5.62,5.62,0,0,0-1.4-3.59.392.392,0,0,1-.08-.1c-.01,0-.01-.01-.02-.03a5.494,5.494,0,0,0-.16-3.93,1.8,1.8,0,0,0-.8,0,6.386,6.386,0,0,0-1.89.68,11.87,11.87,0,0,0-1.29.77.27.27,0,0,1-.23.04,13.671,13.671,0,0,0-3.92-.47,13.887,13.887,0,0,0-3.28.47.243.243,0,0,1-.22-.04,11.465,11.465,0,0,0-2.04-1.11,5,5,0,0,0-1.44-.37c-.13-.01-.26,0-.39,0-.09,0-.13.05-.16.13a6.361,6.361,0,0,0-.3,1.03,5.378,5.378,0,0,0,.07,2.46l.06.18c.02.06.04.11.06.17a1,1,0,0,0-.1.11,5.685,5.685,0,0,0-1.39,3.23,9.753,9.753,0,0,0,.03,1.87,8.175,8.175,0,0,0,.34,1.76,5.628,5.628,0,0,0,3.5,3.72,10.328,10.328,0,0,0,2.12.55c.23.04.46.07.72.1-.11.12-.21.23-.3.35s-.16.24-.23.36a3.12,3.12,0,0,0-.18.42c-.05.13-.09.27-.13.41s-.06.29-.09.45a4.4,4.4,0,0,1-.95.31,3.217,3.217,0,0,1-1.63-.06,2.886,2.886,0,0,1-1.38-.97,5.478,5.478,0,0,1-.35-.49,4.025,4.025,0,0,0-.98-1.08,2.1,2.1,0,0,0-1.37-.46,1.825,1.825,0,0,0-.4.05c-.25.07-.3.23-.15.44a1.3,1.3,0,0,0,.45.39,3.028,3.028,0,0,1,.99.96,6.512,6.512,0,0,1,.75,1.37,2.67,2.67,0,0,0,1.74,1.57,4.872,4.872,0,0,0,1.65.22,8.8,8.8,0,0,0,1.44-.15.448.448,0,0,0,.11-.01c0,.05.01.1.01.14.01.85.01,1.7.02,2.55a1.149,1.149,0,0,1-.01.19.658.658,0,0,1-.55.58c-.05.01-.1.02-.16.03h-.63a9.854,9.854,0,0,1-9.86-9.86V247.94a9.854,9.854,0,0,1,9.86-9.86H182.3A9.854,9.854,0,0,1,192.16,247.94Z" transform="translate(-162.16 -238.08)"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/GingerWallet" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                        <path d="M20.1,0H9.9C4.4,0,0,4.4,0,9.9v10.3C0,25.6,4.4,30,9.9,30h10.3c5.4,0,9.9-4.4,9.9-9.9V9.9C30,4.4,25.6,0,20.1,0z
+         M18.1,22.4l-4-5.2l-4.5,5.2H7.1l5.9-6.7L6.8,7.6H12l3.6,4.7l4.1-4.7h2.5l-5.5,6.3l6.5,8.5H18.1z"></path>
+                                        <polygon points="9.7,9 18.8,20.9 20.2,20.9 11.2,9"></polygon>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/GingerWallet" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 139">
+                                        <path class="cls-1" d="M99.41,0H39.59C17.73,0,0,17.73,0,39.59v59.81c0,21.87,17.73,39.59,39.59,39.59h59.81c21.87,0,39.59-17.73,39.59-39.59V39.59C139,17.73,121.27,0,99.41,0Zm13.42,39.96l-13.75,64.19s-.83,3.79-4,3.92c-.79,.03-1.57-.2-2.25-.62-4.83-2.95-22.58-16.21-22.58-16.21l-10.62,10.13s-1.93,1.93-3.98,2.05l1.69-21.96,39.57-35.47s.72-.97,0-1.21c-.72-.24-1.13-.56-3.34,.81-2.21,1.37-48.29,30.32-48.29,30.32l-21.49-6.51s-3.36-1.28-2.87-3.38c.36-1.56,2.41-2.65,3.86-3.13,1.45-.48,82.75-31.61,82.75-31.61,0,0,3.62-1.45,5.31,1.45,1.45,2.17,0,7.22,0,7.22Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://api.gingerwallet.io/swagger" target="_blank">API</a>
+                        <a href="https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi/Legal/Assets/" target="_blank">Privacy Policy</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
