@@ -337,6 +337,155 @@
                                 <p>It is important to use a random and long password.</p>
                             </div>
                         </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq11">
+                            <label for="faq11">
+                                WHAT IS THE DEFAULT 2FA STATE OF GINGERWALLET?
+                            </label>
+                            <div class="card-content">
+                                <p>By default, GingerWallet operates without 2FA (Two-Factor Authentication), allowing users to use the wallet anonymously.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq12">
+                            <label for="faq12">
+                                HOW DO I ENABLE 2FA IN GINGERWALLET?
+                            </label>
+                            <div class="card-content">
+                                <strong>To enable 2FA:</strong>
+                                <ul>
+                                    <li>Go to Settings -> Security</li>
+                                    <li>Toggle the 2FA switch to "On"</li>
+                                    <li>A QR code will appear in a pop-up window for the next steps.</li>
+                                </ul>
+                                <p>To use 2FA features in GingerWallet, you need to enable Tor. Since GingerWallet now operates with a new working folder, it's recommended to delete the old Wasabi working folder if it's no longer in use, as the files stored there are unencrypted.</p>
+
+                                <p><strong>Important: Delete your old working folder only if the GingerWallet folder is in the same location and your updated app is functioning properly.</strong></p>
+
+                                <strong>To delete old working folder on different systems:</strong>
+
+                                <ul>
+                                    <li>Windows: /Users/{your username}/AppData/Roaming/WalletWasabi/Client</li>
+                                    <li>Linux: /home/{your username}/.walletwasabi/client</li>
+                                    <li>macOS: /Users/{your username}/.walletwasabi/client</li>
+                                </ul>
+                                <p>You cannot manually add 2FA to your auth folder using only a QR code.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq13">
+                            <label for="faq13">
+                                HOW DO I SET UP 2FA USING AN AUTHENTICATOR APP?
+                            </label>
+                            <div class="card-content">
+                                <strong>Once the QR code appears:</strong>
+                                <ul>
+                                    <li>Scan it using a mobile authenticator app like Google Authenticator, 2FAS Auth, Aegis Authenticator, FreeOTP.</li>
+                                    <li>Make sure your authenticator app supports sha256 and 8 digit authentication if your are not using any from the previous examples</li>
+                                    <li>Enter the current PIN code displayed in your authenticator app into the input field below the QR code.</li>
+                                    <li>After verifying the PIN code, 2FA will be activated.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq14">
+                            <label for="faq14">
+                                WHAT IS THE PURPOSE OF THE 2FA_INFO.GWS FILE?
+                            </label>
+                            <div class="card-content">
+                                <p>The <strong>2fa_info.gws file</strong> is an encrypted file that ensures the security of your wallet. Once 2FA is activated, this file is created on your device, and all existing and future wallets will be encrypted automatically.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq15">
+                            <label for="faq15">
+                                DO I NEED TO RESTART THE APPLICATION AFTER ENABLING 2FA?
+                            </label>
+                            <div class="card-content">
+                                <p>Yes, after activating 2FA, GingerWallet must be restarted for the changes to take effect.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq16">
+                            <label for="faq16">
+                                HOW DOES THE LOGIN PROCESS CHANGE AFTER ENABLING 2FA?
+                            </label>
+                            <div class="card-content">
+                                <strong>After restarting the application:</strong>
+                                <ul>
+                                    <li>A pop-up window will request the current PIN code from your authenticator app at startup.</li>
+                                    <li>Enter the PIN code, and upon successful verification, the system will decode and load your wallet files.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq17">
+                            <label for="faq17">
+                                HOW DO I DISABLE 2FA?
+                            </label>
+                            <div class="card-content">
+                                <strong>To disable 2FA:</strong>
+                                <ul>
+                                    <li>Navigate to Settings -> Security</li>
+                                    <li>Toggle the 2FA switch to "Off."</li>
+                                    <li>The system will deactivate 2FA and decode all wallet files.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq18">
+                            <label for="faq18">
+                                WHAT SHOULD I DO IF I CHANGE DEVICES OR LOSE DATA?
+                            </label>
+                            <div class="card-content">
+                                <strong>In case of a device change or data loss:</strong>
+                                <ul>
+                                    <li>Reinstall GingerWallet on the new device.</li>
+                                    <li>Restore your wallets using the securely stored seed words.</li>
+                                    <li>You will need to set up 2FA again (if desired).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq19">
+                            <label for="faq19">
+                                WHAT ARE THE SECURITY BEST PRACTICES FOR USING GINGERWALLET?
+                            </label>
+                            <div class="card-content">
+                                <ul>
+                                    <li>Always store your seed words in a secure, offline location.</li>
+                                    <li>If you lose your phone or suspect unauthorized access, immediately create a new wallet.</li>
+                                    <li>Transfer your assets to the new wallet and invalidate the old wallet's seed words.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq20">
+                            <label for="faq20">
+                                DOES GINGERWALLET STORE ANY PERSONAL INFORMATION?
+                            </label>
+                            <div class="card-content">
+                                <p>No, GingerWallet operates anonymously. There is no user account or personal data storage. All security operations, including encryption, are performed locally on your device.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq21">
+                            <label for="faq21">
+                                WHAT HAPPENS IF I LOSE ACCESS TO MY AUTHENTICATOR APP?
+                            </label>
+                            <div class="card-content">
+                                <p>If you lose access to your authenticator app, you will need to restore your wallet using the seed words and set up a new 2FA process. Ensure your seed words are securely stored to avoid losing access to your funds.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq22">
+                            <label for="faq22">
+                                HOW DOES GINGERWALLET ENSURE SECURITY WITH 2FA?
+                            </label>
+                            <div class="card-content">
+                                <p>The combination of the encrypted <strong>2fa_info.gws file</strong> and the PIN code from the authenticator app ensures that your wallet remains secure. Proper storage of seed words is critical for recovering your wallet in case of device loss or reinstallation.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="sticky-top pt-header" id="gingercoordinator">
@@ -438,9 +587,9 @@
                                         <div class="my-4">
                                             <div class="system-text">WINDOWS 10+</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.msi" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.msi" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .msi <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.msi.asc" target="_blank">signature</a></span>
+                                            .msi <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.msi.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -450,9 +599,9 @@
                                         <div class="my-4">
                                             <div class="system-text">MACOS 12.0+ INTEL</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.dmg.asc" target="_blank">signature</a></span>
+                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.dmg.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -462,9 +611,9 @@
                                         <div class="my-4">
                                             <div class="system-text">MACOS 12.0+ M1, M2</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10-arm64.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11-arm64.dmg" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10-arm64.dmg.asc" target="_blank">signature</a></span>
+                                            .dmg <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11-arm64.dmg.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -474,9 +623,9 @@
                                         <div class="my-4">
                                             <div class="system-text">UBUNTU / DEBIAN</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.deb" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.deb" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .deb <span class="float-end"><a href="hhttps://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.deb.asc" target="_blank">signature</a></span>
+                                            .deb <span class="float-end"><a href="hhttps://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.deb.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -486,9 +635,9 @@
                                         <div class="my-4">
                                             <div class="system-text">OTHER LINUX</div>
                                         </div>
-                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.tar.gz" target="_blank" class="btn btn-primary w-100">Download</a>
+                                        <a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.tar.gz" target="_blank" class="btn btn-primary w-100">Download</a>
                                         <div class="small-text mt-4">
-                                            .tar.gz <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.10/Ginger-2.0.10.tar.gz.asc" target="_blank">signature</a></span>
+                                            .tar.gz <span class="float-end"><a href="https://github.com/GingerPrivacy/GingerWallet/releases/download/v2.0.11/Ginger-2.0.11.tar.gz.asc" target="_blank">signature</a></span>
                                         </div>
                                     </div>
                                 </div>
