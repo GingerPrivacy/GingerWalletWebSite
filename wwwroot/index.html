@@ -360,7 +360,8 @@
                                 </ul>
                                 <p>To use 2FA features in GingerWallet, you need to enable Tor. Since GingerWallet now operates with a new working folder, it's recommended to delete the old Wasabi working folder if it's no longer in use, as the files stored there are unencrypted.</p>
 
-                                <p><strong>Important: Delete your old working folder only if the GingerWallet folder is in the same location and your updated app is functioning properly.</strong></p>
+                                <p><strong>Important: Delete your old working folder only if the GingerWallet folder is in the same location and your updated app is functioning properly.</strong>
+                                </p>
 
                                 <strong>To delete old working folder on different systems:</strong>
 
@@ -484,6 +485,23 @@
                             </label>
                             <div class="card-content">
                                 <p>The combination of the encrypted <strong>2fa_info.gws file</strong> and the PIN code from the authenticator app ensures that your wallet remains secure. Proper storage of seed words is critical for recovering your wallet in case of device loss or reinstallation.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <input type="checkbox" id="faq23">
+                            <label for="faq23">
+                                HOW CAN I RECOVER MY LABELS AND EXTRA OPTIONS FOR MY WALLET IF I'VE LOST THE 2FA KEY?
+                            </label>
+                            <div class="card-content">
+                                <p>If you've lost your 2FA key, you can still recover your labels and extra options with minimal manual work. Follow these steps:</p>
+                                <ol>
+                                    <li><strong>Move the attr file:</strong> First, locate the attr file and move it to a separate folder for safekeeping, as you’ll need it later.</li>
+                                    <li><strong>Recover the wallet:</strong> Use the recovery process in the application to restore your wallet.</li>
+                                    <li><strong>Close the application:</strong> Once the recovery process is complete, close the wallet application.</li>
+                                    <li><strong>Copy back the attr file:</strong> Replace the newly created attr file with the one you saved earlier by copying it back into its original location.</li>
+                                    <li><strong>Restart the application:</strong> Reopen the wallet application, and your wallet should be fully restored, even without the 2FA key.</li>
+                                </ol>
+                                <p>This process allows you to recover the labels, extra options, and other settings.</p>
                             </div>
                         </div>
                     </div>
