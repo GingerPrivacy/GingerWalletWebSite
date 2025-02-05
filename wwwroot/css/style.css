@@ -292,7 +292,7 @@ section {
     margin: 40px;
 }
 .epic-text {
-    font-size: 70px;
+    font-size: 60px;
 }
 footer {
     padding: 20px 0;
@@ -365,6 +365,19 @@ ol li {
 }
 .rounded-corners {
     border-radius: 12px;
+}
+.custom-select span {
+    opacity: 0.5;
+    padding-right: 5px;
+}
+.custom-select select {
+    background: transparent;
+    color: #fff;
+    border:none;
+    -webkit-appearance: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
     .menu {
