@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
+    color-scheme: dark;
     --primary: rgba(166, 141, 103, 1);
     /* #A28E6C */
     
@@ -366,18 +367,22 @@ ol li {
 .rounded-corners {
     border-radius: 12px;
 }
+.custom-select {
+    width: auto;
+    font-weight: bold;
+}
 .custom-select span {
     opacity: 0.5;
     padding-right: 5px;
 }
 .custom-select select {
-    background: transparent;
-    color: #fff;
-    border:none;
+    appearance: none; /* Removes default styling */
     -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
     outline: none;
     font-weight: bold;
-    cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
     .menu {
