@@ -367,23 +367,35 @@ ol li {
 .rounded-corners {
     border-radius: 12px;
 }
-.custom-select {
-    width: auto;
-    font-weight: bold;
-}
-.custom-select span {
-    opacity: 0.5;
-    padding-right: 5px;
-}
-.custom-select select {
-    appearance: none; /* Removes default styling */
+
+#language-selector {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: transparent;
     border: none;
-    outline: none;
+    color: #fff;
+    font-size: 16px;
     font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
 }
+
+.custom-select {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--black);
+    border: none;
+}
+
+#language-selector option {
+    background-color: var(--black);
+    color: white;
+}
+
 @media only screen and (max-width: 600px) {
     .menu {
         display: none;
