@@ -24,7 +24,7 @@
   "history-text-2": "A Ginger Wallet a Wasabi Wallet-ból lett fork-olva. Egy új koordinátor és aktív coinjoin szolgáltatás került bevezetésre.",
   "caption-solutions": "Megoldások",
   "title-solutions": "MIÉRT A GINGER WALLET?",
-  "text-solutions-1": "Olyan társadalomban élünk, amely Orwell disztópiáját idézi, ahol a megfiyelés mindenütt jelen van, és az információdat arra használják, hogy kategorizáljanak és befolyásoljanak téged. A Bitcoin projektekkel egyre nagyobb nyomás nehezedik, hogy minél több adatot gyűjtsenek.",
+  "text-solutions-1": "Olyan társadalomban élünk, amely Orwell disztópiáját idézi, ahol a megfigyelés mindenütt jelen van, és az információdat arra használják, hogy kategorizáljanak és befolyásoljanak téged. A Bitcoin projektekkel egyre nagyobb nyomás nehezedik, hogy minél több adatot gyűjtsenek.",
   "text-solutions-2": "Ezért a Ginger Wallet egy nulla információval rendelkező szoftverként van megtervezve. Fejlesztői nem gyűjthetnek semmilyen érzékeny információt rólad. A bitcoin tranzakcióid teljes mértékben csak te fogsz tudni.",
   "solution-title-1": "Nyílt forráskódú",
   "solution-text-1": "A Ginger Wallet egy <a href='https://github.com/GingerPrivacy/GingerWallet' target='_blank'>ingyenes, nyílt forráskódú</a> és <a href='https://github.com/GingerPrivacy/GingerWallet/blob/master/WalletWasabi.Documentation/Guides/DeterministicBuildGuide.md' target='_blank'>determinálisan újraalkotható</a> szoftver. Bárki láthatja, ellenőrizheti és hozzátehet a kódhoz.",
