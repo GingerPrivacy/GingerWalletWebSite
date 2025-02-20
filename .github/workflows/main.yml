@@ -1,4 +1,8 @@
-on: push
+on:
+  push:
+    branches:
+      - master  # Only run when changes are pushed to master
+      
 name: 🚀 Deploy to Production server
 jobs:
   web-deploy:
