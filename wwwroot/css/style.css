@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
+    color-scheme: dark;
     --primary: rgba(166, 141, 103, 1);
     /* #A28E6C */
     
@@ -292,7 +293,7 @@ section {
     margin: 40px;
 }
 .epic-text {
-    font-size: 70px;
+    font-size: 60px;
 }
 footer {
     padding: 20px 0;
@@ -366,6 +367,35 @@ ol li {
 .rounded-corners {
     border-radius: 12px;
 }
+
+#language-selector {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--black);
+    border: none;
+}
+
+#language-selector option {
+    background-color: var(--black);
+    color: white;
+}
+
 @media only screen and (max-width: 600px) {
     .menu {
         display: none;
