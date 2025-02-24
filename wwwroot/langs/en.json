@@ -2,6 +2,7 @@
   "nav-history": "History",
   "nav-why": "Why Ginger Wallet?",
   "nav-secure": "Secure Coinjoins",
+  "nav-buysell": "Buy & Sell Bitcoin",
   "nav-help": "Help",
   "hero-title": "Your most secure Bitcoin wallet!",
   "hero-desc": "Discover the ultimate open-source, non-custodial Bitcoin wallet for desktop! Enjoy advanced features like CoinJoin with the default coordinator, 2FA with wallet encryption, multilingual support, block filters, Tor integration, and QR code functionality. Plus, benefit from seamless compatibility with a wide range of hardware wallets for a secure and versatile experience.",
@@ -107,5 +108,8 @@
   "addtowasabi-4": "How to add Ginger coordinator to BTCPay Server?",
   "addtowasabi-5": "<li>Select Discover Coordinators over Nostr</li><li>Select Ginger Coordinator</li><li>Save</li>",
   "documentation": "Documentation",
-  "privacy-policy": "Privacy Policy"
+  "privacy-policy": "Privacy Policy",
+  "caption-buysell": "Secure, simple, and fast Bitcoin transactions",
+  "title-buysell": "Buy & Sell Bitcoin Effortlessly",
+  "text-buysell": "Buying and selling Bitcoin has never been easier with Ginger Wallet. Simply choose your amount, select your payment method, and complete your transaction in just a few steps. Whether you're buying to invest or selling to cash out, Ginger Wallet ensures a secure and seamless experience."
 }

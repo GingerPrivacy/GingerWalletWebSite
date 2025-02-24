@@ -2,6 +2,7 @@
   "nav-history": "Történelem",
   "nav-why": "Miért a Ginger Wallet?",
   "nav-secure": "Biztonságos Coinjoin-ok",
+  "nav-buysell": "Bitcoin vásárlás és eladás",
   "nav-help": "Segítség",
   "hero-title": "A legbiztonságosabb Bitcoin tárcád!",
   "hero-desc": "Fedezd fel a legjobb nyílt forráskódú, általad teljeskörűen birtokolt Bitcoin tárcát asztali számítógépre! Élvezd az olyan fejlett funkciókat, mint a CoinJoin az alapértelmezett koordinátorral, 2FA titkosítással, többnyelvű támogatással, blokk szűrőkkel, Tor integrációval és QR kód funkcióval. Emellett élvezheted a széleskörű hardver tárcák kompatibilitását a biztonságos és sokoldalú élményért.",
@@ -107,5 +108,8 @@
   "addtowasabi-4": "Hogyan adhatom hozzá a Ginger koordinátort a BTCPay Serverhez?",
   "addtowasabi-5": "<li>Válaszd a Koordinátorok keresése Nostr-on keresztül</li><li>Válaszd a Ginger koordinátort</li><li>Mentsd el</li>",
   "documentation": "Dokumentáció",
-  "privacy-policy": "Adatvédelmi nyilatkozat"
+  "privacy-policy": "Adatvédelmi nyilatkozat",
+  "caption-buysell": "Biztonságos, egyszerű és gyors Bitcoin tranzakciók",
+  "title-buysell": "Bitcoin vásárlása és eladása könnyedén",
+  "text-buysell": "Bitcoin vásárlása és eladása még soha nem volt ilyen egyszerű a Ginger Wallet segítségével. Válassza ki az összeget, válassza ki a fizetési módot, és fejezze be tranzakcióját néhány lépésben. Akár befektetésként vásárol, akár pénzt szeretne kivenni, a Ginger Wallet biztosítja a biztonságos és zökkenőmentes élményt."
 }
