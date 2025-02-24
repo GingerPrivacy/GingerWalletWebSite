@@ -1,4 +1,8 @@
-on: push
+on:
+  push:
+    branches:
+      - master  # Only run when changes are pushed to master
+      
 name: 🚀 Deploy to Production server
 jobs:
   web-deploy:
@@ -19,3 +23,9 @@ jobs:
           **/.git*
           **/.git*/**
         timeout: 180000
+    - name: 🔥 Purge Cloudflare Cache
+      run: |
+        curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CFZONEID }}/purge_cache" \
+          -H "Authorization: Bearer ${{ secrets.CFAPITOKEN }}" \
+          -H "Content-Type: application/json" \
+          --data '{"purge_everything":true}'
