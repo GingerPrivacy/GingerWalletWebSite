@@ -2,6 +2,7 @@
   "nav-history": "Historial",
   "nav-why": "¿Por qué Ginger Wallet?",
   "nav-secure": "Coinjoins seguros",
+  "nav-buysell": "Comprar y vender Bitcoin",
   "nav-help": "Ayuda",
   "hero-title": "¡Tu billetera de Bitcoin más segura!",
   "hero-desc": "¡Descubre la billetera de Bitcoin de código abierto, no custodial, definitiva para escritorio! Disfruta de funciones avanzadas como CoinJoin con el coordinador predeterminado, 2FA con cifrado de billetera, soporte multilingüe, filtros de bloques, integración con Tor y funcionalidad de código QR. Además, disfruta de una compatibilidad perfecta con una amplia gama de billeteras hardware para una experiencia segura y versátil.",
@@ -107,5 +108,8 @@
   "addtowasabi-4": "¿Cómo agregar el coordinador Ginger a BTCPay Server?",
   "addtowasabi-5": "<li>Selecciona Descubrir Coordinadores a través de Nostr</li><li>Selecciona Coordinador Ginger</li><li>Guardar</li>",
   "documentation": "Documentación",
-  "privacy-policy": "Política de privacidad"
+  "privacy-policy": "Política de privacidad",
+  "caption-buysell": "Transacciones de Bitcoin seguras, simples y rápidas",
+  "title-buysell": "Compra y vende Bitcoin sin esfuerzo",
+  "text-buysell": "Comprar y vender Bitcoin nunca ha sido tan fácil con Ginger Wallet. Simplemente elija su cantidad, seleccione su método de pago y complete su transacción en solo unos pocos pasos. Ya sea que esté comprando para invertir o vendiendo para retirar efectivo, Ginger Wallet garantiza una experiencia segura y sin problemas."
 }
