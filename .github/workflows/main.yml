@@ -19,6 +19,8 @@ jobs:
         server: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        local-dir: wwwroot/   # Only upload the wwwroot folder
+        server-dir: /wwwroot/ # Ensure this is the correct remote directory
         exclude: |
           **/.git*
           **/.git*/**
