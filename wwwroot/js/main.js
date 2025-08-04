@@ -20,21 +20,19 @@ let defaultLang = localStorage.getItem('selectedLang');
 
 if (!defaultLang) {
     const browserLang = navigator.language.slice(0, 2);
-    const langFile = `../langs/${browserLang}.json`;
+    const supportedLangs = ['en', 'fr', 'tr', 'es'];
+    defaultLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
+
+    const langFile = `../langs/${defaultLang}.json`;
 
     fetch(langFile)
         .then(response => response.json())
-        .then(data => {
-            if (data) {
-                defaultLang = browserLang;
-            } else {
-                defaultLang = 'en';
-            }
-
+        .then(() => {
             document.getElementById('language-selector').value = defaultLang;
             document.getElementById('language-selector').dispatchEvent(new Event('change'));
         })
         .catch(error => {
+            console.error('Error loading default language file:', error);
             defaultLang = 'en';
             document.getElementById('language-selector').value = defaultLang;
             document.getElementById('language-selector').dispatchEvent(new Event('change'));
