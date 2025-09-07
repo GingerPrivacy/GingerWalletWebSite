@@ -46,6 +46,10 @@ h4 {font-size: 18px;}
     text-transform: uppercase;
     border-radius: 50px;
     padding: 8px 20px;
+    @media only screen and (max-width: 1199px){
+        font-size: 12px;
+        padding: 6px 14px;
+    }
 }
 .btn-primary {
     background-color: var(--primary);
