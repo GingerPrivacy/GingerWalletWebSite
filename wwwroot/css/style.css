@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     color-scheme: dark;
-    --primary: rgba(166, 141, 103, 1);
-    /* #A28E6C */
+    --primary: rgba(171, 140, 95, 1);
+    /* #AB8C5F */
     
     --secondary: rgba(203, 184, 153, 1);
-    --black: #1A1A1A;
+    --black: #191919;
 }
 * {
     margin: 0;
@@ -151,7 +151,7 @@ section {
 }
 .box {
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.03);
+    background: #1f1f1f;
     padding: 20px;
     height: 100%;
 }
@@ -315,7 +315,7 @@ footer a:last-child {
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    border: 2px solid rgba(73, 88, 107, .3);
+    border: 2px solid #333;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 25px
@@ -328,7 +328,7 @@ footer a:last-child {
     fill: #fff
 }
 .download-box:hover {
-    background-color: rgb(73, 88, 107, .2)
+    background-color: #1f1f1f;
 }
 ol li {
     line-height: 2em;
@@ -393,6 +393,7 @@ ol li {
     gap: 5px;
     background-color: var(--black);
     border: none;
+    margin-left: 10px;
 }
 
 #language-selector option {
