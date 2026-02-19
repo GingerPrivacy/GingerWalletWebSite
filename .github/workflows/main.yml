@@ -1,7 +1,9 @@
 on:
   push:
     branches:
-      - master  # Only run when changes are pushed to master
+      - master
+  workflow_dispatch:
+
       
 name: 🚀 Deploy to Production server
 jobs:
