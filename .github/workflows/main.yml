@@ -23,7 +23,7 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
-        timeout: 180001
+        timeout: 180002
     - name: 🔥 Purge Cloudflare Cache
       run: |
         curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CFZONEID }}/purge_cache" \
