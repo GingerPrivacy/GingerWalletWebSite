@@ -824,6 +824,230 @@ ol li {
 }
 
 /* ============================================================
+   COINJOIN VISUALIZATION
+   ============================================================ */
+
+.cj-wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    display: block;
+}
+
+.cj-svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+/* --- Static styles --- */
+.cj-node {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.cj-node circle {
+    fill: rgba(171, 140, 95, 0.12);
+    stroke: rgba(171, 140, 95, 0.85);
+    stroke-width: 1.5;
+}
+
+.cj-out-circle {
+    fill: rgba(255, 255, 255, 0.04);
+    stroke: rgba(255, 255, 255, 0.3);
+    stroke-width: 1.5;
+    stroke-dasharray: 4 3;
+}
+
+.cj-sym {
+    fill: rgba(171, 140, 95, 0.9);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cj-q {
+    fill: rgba(255, 255, 255, 0.45);
+    font-size: 18px;
+}
+
+.cj-wire {
+    fill: none;
+    stroke: rgba(171, 140, 95, 0.5);
+    stroke-width: 1.5;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+
+.cj-mixer {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.cj-mixer-rect {
+    fill: rgba(171, 140, 95, 0.14);
+    stroke: rgba(171, 140, 95, 0.9);
+    stroke-width: 1.5;
+    filter: drop-shadow(0 0 8px rgba(171, 140, 95, 0.35));
+}
+
+.cj-mixer-text {
+    fill: rgba(171, 140, 95, 1);
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.cj-col-label {
+    fill: rgba(255, 255, 255, 0.35);
+    font-family: Montserrat, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cj-caption {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+    margin-top: 10px;
+    letter-spacing: 0.04em;
+    font-style: normal;
+}
+
+/* --- Loop: T = 6s
+       Timeline (as % of 6 s):
+         2% = 0.12 s  input node 1 in
+         5% = 0.30 s  input node 2 in
+         8% = 0.48 s  input node 3 in
+        11% = 0.66 s  wire 1 draws  →  19% = 1.14 s
+        15% = 0.90 s  wire 2 draws  →  23% = 1.38 s
+        19% = 1.14 s  wire 3 draws  →  27% = 1.62 s
+        30% = 1.80 s  mixer in      →  37% = 2.22 s
+        40% = 2.40 s  out-wire 1    →  48% = 2.88 s
+        44% = 2.64 s  out-wire 2    →  52% = 3.12 s
+        48% = 2.88 s  out-wire 3    →  56% = 3.36 s
+        58% = 3.48 s  output node 1 in
+        61% = 3.66 s  output node 2 in
+        64% = 3.84 s  output node 3 in
+        70–80%        hold
+        80–94%        fade out
+        94–100%       invisible (restart)
+   --- */
+
+/* Assign animations */
+.cj-n1        { animation: cjN1   6s ease-in-out infinite; }
+.cj-n2        { animation: cjN2   6s ease-in-out infinite; }
+.cj-n3        { animation: cjN3   6s ease-in-out infinite; }
+.cj-iw1       { animation: cjIW1  6s linear    infinite; }
+.cj-iw2       { animation: cjIW2  6s linear    infinite; }
+.cj-iw3       { animation: cjIW3  6s linear    infinite; }
+.cj-mixer     { animation: cjMix  6s ease-in-out infinite; }
+.cj-mixer-rect{ animation: cjGlow 6s ease-in-out infinite; }
+.cj-ow1       { animation: cjOW1  6s linear    infinite; }
+.cj-ow2       { animation: cjOW2  6s linear    infinite; }
+.cj-ow3       { animation: cjOW3  6s linear    infinite; }
+.cj-o1        { animation: cjO1   6s ease-in-out infinite; }
+.cj-o2        { animation: cjO2   6s ease-in-out infinite; }
+.cj-o3        { animation: cjO3   6s ease-in-out infinite; }
+.cj-col-label { animation: cjLbl  6s ease       infinite; }
+
+/* Input nodes */
+@keyframes cjN1 {
+    0%,  2%  { opacity: 0; transform: scale(0.3); }
+    7%,  80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.5); }
+}
+@keyframes cjN2 {
+    0%,  5%  { opacity: 0; transform: scale(0.3); }
+    10%, 80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.5); }
+}
+@keyframes cjN3 {
+    0%,  8%  { opacity: 0; transform: scale(0.3); }
+    13%, 80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.5); }
+}
+
+/* Input wires (stroke-dashoffset 1→0 = wire draws in) */
+@keyframes cjIW1 {
+    0%,  11% { stroke-dashoffset: 1; opacity: 0; }
+    12%      { opacity: 1; }
+    19%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    93%, 100%{ stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes cjIW2 {
+    0%,  15% { stroke-dashoffset: 1; opacity: 0; }
+    16%      { opacity: 1; }
+    23%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    93%, 100%{ stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes cjIW3 {
+    0%,  19% { stroke-dashoffset: 1; opacity: 0; }
+    20%      { opacity: 1; }
+    27%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    93%, 100%{ stroke-dashoffset: 0; opacity: 0; }
+}
+
+/* Mixer appear + glow pulse while visible */
+@keyframes cjMix {
+    0%,  30% { opacity: 0; transform: scale(0.8); }
+    37%, 80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.8); }
+}
+@keyframes cjGlow {
+    0%,  36% { filter: drop-shadow(0 0  6px rgba(171,140,95,0.2)); }
+    52%      { filter: drop-shadow(0 0 18px rgba(171,140,95,0.9)); }
+    68%      { filter: drop-shadow(0 0  6px rgba(171,140,95,0.2)); }
+    80%      { filter: drop-shadow(0 0 18px rgba(171,140,95,0.9)); }
+    93%, 100%{ filter: drop-shadow(0 0  6px rgba(171,140,95,0.2)); }
+}
+
+/* Output wires */
+@keyframes cjOW1 {
+    0%,  40% { stroke-dashoffset: 1; opacity: 0; }
+    41%      { opacity: 1; }
+    48%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    93%, 100%{ stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes cjOW2 {
+    0%,  44% { stroke-dashoffset: 1; opacity: 0; }
+    45%      { opacity: 1; }
+    52%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    93%, 100%{ stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes cjOW3 {
+    0%,  48% { stroke-dashoffset: 1; opacity: 0; }
+    49%      { opacity: 1; }
+    56%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    93%, 100%{ stroke-dashoffset: 0; opacity: 0; }
+}
+
+/* Output nodes */
+@keyframes cjO1 {
+    0%,  58% { opacity: 0; transform: scale(0.3); }
+    64%, 80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.5); }
+}
+@keyframes cjO2 {
+    0%,  61% { opacity: 0; transform: scale(0.3); }
+    67%, 80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.5); }
+}
+@keyframes cjO3 {
+    0%,  64% { opacity: 0; transform: scale(0.3); }
+    70%, 80% { opacity: 1; transform: scale(1);   }
+    93%, 100%{ opacity: 0; transform: scale(0.5); }
+}
+
+/* Column labels */
+@keyframes cjLbl {
+    0%,  1%  { opacity: 0; }
+    4%,  80% { opacity: 1; }
+    93%, 100%{ opacity: 0; }
+}
+
+/* ============================================================
    ANIMATIONS & EFFECTS
    ============================================================ */
 

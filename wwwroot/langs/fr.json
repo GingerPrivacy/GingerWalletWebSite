@@ -111,5 +111,9 @@
   "privacy-policy": "Politique de confidentialité",
   "caption-buysell": "Transactions Bitcoin sécurisées, simples et rapides",
   "title-buysell": "Acheter et vendre Bitcoin en toute simplicité",
-  "text-buysell": "Acheter et vendre Bitcoin n'a jamais été aussi facile avec Ginger Wallet. Choisissez simplement votre montant, sélectionnez votre méthode de paiement et complétez votre transaction en quelques étapes. Que vous achetiez pour investir ou vendiez pour encaisser, Ginger Wallet assure une expérience sécurisée et fluide."
+  "text-buysell": "Acheter et vendre Bitcoin n'a jamais été aussi facile avec Ginger Wallet. Choisissez simplement votre montant, sélectionnez votre méthode de paiement et complétez votre transaction en quelques étapes. Que vous achetiez pour investir ou vendiez pour encaisser, Ginger Wallet assure une expérience sécurisée et fluide.",
+  "nav-coinjoin": "CoinJoin",
+  "caption-coinjoin": "Comment ça fonctionne",
+  "title-coinjoin": "Qu'est-ce qu'un CoinJoin ?",
+  "text-coinjoin": "Un CoinJoin est une transaction Bitcoin collaborative où plusieurs utilisateurs combinent leurs entrées en une seule. Les sorties de valeur égale sont cryptographiquement impossibles à relier à une entrée spécifique — la confidentialité par les mathématiques, pas par la confiance."
 }

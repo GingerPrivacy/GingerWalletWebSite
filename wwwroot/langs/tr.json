@@ -111,5 +111,9 @@
   "privacy-policy": "Gizlilik Politikası",
   "caption-buysell": "Güvenli, basit ve hızlı Bitcoin işlemleri",
   "title-buysell": "Bitcoin Al & Sat Kolayca",
-  "text-buysell": "Ginger Wallet ile Bitcoin alıp satmak hiç bu kadar kolay olmamıştı. Miktarınızı seçin, ödeme yöntemini belirleyin ve işleminizi sadece birkaç adımda tamamlayın. Yatırım yapmak için alıyor ya da nakit çıkışı yapmak için satıyor olun, Ginger Wallet güvenli ve sorunsuz bir deneyim sunar."
+  "text-buysell": "Ginger Wallet ile Bitcoin alıp satmak hiç bu kadar kolay olmamıştı. Miktarınızı seçin, ödeme yöntemini belirleyin ve işleminizi sadece birkaç adımda tamamlayın. Yatırım yapmak için alıyor ya da nakit çıkışı yapmak için satıyor olun, Ginger Wallet güvenli ve sorunsuz bir deneyim sunar.",
+  "nav-coinjoin": "CoinJoin",
+  "caption-coinjoin": "Nasıl Çalışır",
+  "title-coinjoin": "CoinJoin Nedir?",
+  "text-coinjoin": "CoinJoin, birden fazla kullanıcının girişlerini tek bir işlemde birleştirdiği işbirlikçi bir Bitcoin işlemidir. Eşit değerli çıktılar, herhangi bir belirli girişle kriptografik olarak ilişkilendirilemez — güvene değil, matematiğe dayalı gizlilik."
 }

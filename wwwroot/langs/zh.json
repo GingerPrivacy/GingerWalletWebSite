@@ -111,5 +111,9 @@
   "privacy-policy": "隐私政策",
   "caption-buysell": "安全、简单、快速的比特币交易",
   "title-buysell": "轻松购买和出售比特币",
-  "text-buysell": "使用Ginger Wallet购买和出售比特币从未如此简单。只需选择金额，选择付款方式，并在几个步骤内完成交易。无论您是购买投资还是出售提现，Ginger Wallet都能确保安全无缝的体验。"
+  "text-buysell": "使用Ginger Wallet购买和出售比特币从未如此简单。只需选择金额，选择付款方式，并在几个步骤内完成交易。无论您是购买投资还是出售提现，Ginger Wallet都能确保安全无缝的体验。",
+  "nav-coinjoin": "CoinJoin",
+  "caption-coinjoin": "工作原理",
+  "title-coinjoin": "什么是 CoinJoin？",
+  "text-coinjoin": "CoinJoin 是一种协作式比特币交易，多个用户将各自的输入合并为一笔交易。等值的输出在密码学上无法追溯到任何特定输入——隐私由数学保障，而非信任。"
 }

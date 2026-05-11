@@ -56,6 +56,8 @@
                         </li>
                         <li><a href="#why" data-lang="nav-why">Why Ginger Wallet?</a>
                         </li>
+                        <li><a href="#coinjoin" data-lang="nav-coinjoin">CoinJoin</a>
+                        </li>
                         <li><a href="#securecoinjoins" data-lang="nav-secure">Secure Coinjoins</a>
                         </li>
                         <li><a href="#buysell" data-lang="nav-buysell">Buy & Sell Bitcoin</a>
@@ -82,6 +84,7 @@
                         <p class="bigger-text" data-lang="hero-desc">Discover the ultimate open-source, non-custodial Bitcoin wallet for desktop! Enjoy advanced features like CoinJoin with the default coordinator, 2FA with wallet encryption, multilingual support, block filters, Tor integration, and QR code functionality. Plus, benefit from seamless compatibility with a wide range of hardware wallets for a secure and versatile experience.</p>
                         <a href="index.html#download" class="btn btn-primary my-5" data-lang="download">Download</a> <a href="#why" class="btn btn-link" data-lang="read-more">Read more</a>
                     </div>
+
                     <div class="col-lg-12">
                         <img src="img/main.png" class="w-100 rounded-corners img-grad hero-float">
                     </div>
@@ -187,6 +190,78 @@
                         </div>
 
 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="coinjoin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 text-center mb-5">
+                        <div class="section-label" data-lang="caption-coinjoin">How It Works</div>
+                        <h2 class="mb-4" data-lang="title-coinjoin">What is a CoinJoin?</h2>
+                        <p data-lang="text-coinjoin">A CoinJoin is a collaborative Bitcoin transaction where multiple users combine their inputs into one. The equal-value outputs are cryptographically unlinkable to any specific input — privacy by math, not by trust.</p>
+                    </div>
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <figure class="cj-wrap">
+                            <svg class="cj-svg" viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" aria-label="CoinJoin: multiple user inputs combined into one trustless transaction with unlinkable outputs">
+
+                                <!-- Column headers -->
+                                <text x="65"  y="14" text-anchor="middle" class="cj-col-label">INPUTS</text>
+                                <text x="635" y="14" text-anchor="middle" class="cj-col-label">OUTPUTS</text>
+
+                                <!-- Input nodes -->
+                                <g class="cj-node cj-n1">
+                                    <circle cx="65" cy="50"  r="24"/>
+                                    <text x="65"  y="50"  text-anchor="middle" dominant-baseline="middle" class="cj-sym">&#x20BF;</text>
+                                </g>
+                                <g class="cj-node cj-n2">
+                                    <circle cx="65" cy="115" r="24"/>
+                                    <text x="65"  y="115" text-anchor="middle" dominant-baseline="middle" class="cj-sym">&#x20BF;</text>
+                                </g>
+                                <g class="cj-node cj-n3">
+                                    <circle cx="65" cy="180" r="24"/>
+                                    <text x="65"  y="180" text-anchor="middle" dominant-baseline="middle" class="cj-sym">&#x20BF;</text>
+                                </g>
+
+                                <!-- Input wires -->
+                                <path class="cj-wire cj-iw1" d="M 89 50  C 190 50  280 115 280 115" pathLength="1"/>
+                                <path class="cj-wire cj-iw2" d="M 89 115 L 280 115"                  pathLength="1"/>
+                                <path class="cj-wire cj-iw3" d="M 89 180 C 190 180 280 115 280 115" pathLength="1"/>
+
+                                <!-- Mixer -->
+                                <g class="cj-mixer">
+                                    <rect class="cj-mixer-rect" x="280" y="83" width="140" height="64" rx="10"/>
+                                    <text x="350" y="108" text-anchor="middle" dominant-baseline="middle" class="cj-mixer-text">COIN</text>
+                                    <text x="350" y="126" text-anchor="middle" dominant-baseline="middle" class="cj-mixer-text">JOIN</text>
+                                </g>
+
+                                <!-- Output wires -->
+                                <path class="cj-wire cj-ow1" d="M 420 115 C 520 115 611 50  611 50"  pathLength="1"/>
+                                <path class="cj-wire cj-ow2" d="M 420 115 L 611 115"                  pathLength="1"/>
+                                <path class="cj-wire cj-ow3" d="M 420 115 C 520 115 611 180 611 180" pathLength="1"/>
+
+                                <!-- Output nodes -->
+                                <g class="cj-node cj-o1">
+                                    <circle cx="635" cy="50"  r="24" class="cj-out-circle"/>
+                                    <text x="635" y="50"  text-anchor="middle" dominant-baseline="middle" class="cj-sym cj-q">?</text>
+                                </g>
+                                <g class="cj-node cj-o2">
+                                    <circle cx="635" cy="115" r="24" class="cj-out-circle"/>
+                                    <text x="635" y="115" text-anchor="middle" dominant-baseline="middle" class="cj-sym cj-q">?</text>
+                                </g>
+                                <g class="cj-node cj-o3">
+                                    <circle cx="635" cy="180" r="24" class="cj-out-circle"/>
+                                    <text x="635" y="180" text-anchor="middle" dominant-baseline="middle" class="cj-sym cj-q">?</text>
+                                </g>
+
+                            </svg>
+                            <figcaption class="cj-caption">Multiple users combine inputs in one trustless transaction — outputs are unlinkable</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 text-center mt-5">
+                        <a href="#download" class="btn btn-primary" data-lang="download">Download</a>
+                        <a href="#securecoinjoins" class="btn btn-link" data-lang="read-more">Read more</a>
                     </div>
                 </div>
             </div>

@@ -111,5 +111,9 @@
   "privacy-policy": "Adatvédelmi nyilatkozat",
   "caption-buysell": "Biztonságos, egyszerű és gyors Bitcoin tranzakciók",
   "title-buysell": "Bitcoin vásárlása és eladása könnyedén",
-  "text-buysell": "Bitcoin vásárlása és eladása még soha nem volt ilyen egyszerű a Ginger Wallet segítségével. Válassza ki az összeget, válassza ki a fizetési módot, és fejezze be tranzakcióját néhány lépésben. Akár befektetésként vásárol, akár pénzt szeretne kivenni, a Ginger Wallet biztosítja a biztonságos és zökkenőmentes élményt."
+  "text-buysell": "Bitcoin vásárlása és eladása még soha nem volt ilyen egyszerű a Ginger Wallet segítségével. Válassza ki az összeget, válassza ki a fizetési módot, és fejezze be tranzakcióját néhány lépésben. Akár befektetésként vásárol, akár pénzt szeretne kivenni, a Ginger Wallet biztosítja a biztonságos és zökkenőmentes élményt.",
+  "nav-coinjoin": "CoinJoin",
+  "caption-coinjoin": "Hogyan működik",
+  "title-coinjoin": "Mi az a CoinJoin?",
+  "text-coinjoin": "A CoinJoin egy együttműködésen alapuló Bitcoin-tranzakció, amelyben több felhasználó egyesíti bemeneteit egybe. Az egyenlő értékű kimenetek kriptográfiailag nem köthetők egyetlen konkrét bemenethez sem — adatvédelem matematika által, nem bizalom által."
 }
