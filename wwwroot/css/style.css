@@ -46,7 +46,7 @@ a:hover {
     color: var(--primary);
 }
 
-p, .card-content, .card-content li {
+p {
     line-height: 1.8em;
 }
 
@@ -531,91 +531,8 @@ section:first-child > * {
     color: var(--text-muted);
 }
 
-/* === FAQ / ACCORDION CARDS === */
-.card {
-    background: var(--surface);
-    color: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    margin: 10px 0;
-    overflow: hidden;
-    transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-.card:hover {
-    border-color: rgba(171, 140, 95, 0.2);
-}
-
-.card-content, .card input {
-    display: none;
-}
-
-.card input:checked + label {
-    color: var(--primary);
-}
-
-.card input:checked + label + .card-content {
-    display: block;
-    animation: fadeSlideIn 0.22s ease-out;
-}
-
-@keyframes fadeSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-6px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.card label {
-    padding: 18px 54px 16px 20px;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    line-height: 1.45em;
-    display: block;
-    position: relative;
-    letter-spacing: 0.04em;
-    transition: color var(--transition);
-}
-
-.card label:hover {
-    color: var(--primary);
-}
-
-.card label:after {
-    content: '+';
-    color: var(--primary);
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1;
-}
-
-.card input:checked + label:after {
-    content: '−';
-}
-
-.card-content {
-    padding: 4px 20px 20px;
-    border-top: 1px solid var(--border);
-    margin-top: -2px;
-}
-
-.card table {
-    color: var(--primary);
-    margin: 40px;
-}
-
 /* === INFO BOXES (coordinator section) === */
 #gingercoordinator .box,
-#addtowasabi,
 #addtobtcpay {
     border-radius: var(--radius);
 }
